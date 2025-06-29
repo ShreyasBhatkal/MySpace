@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MySpace – Declutter. Design. Dominate.</title>
+  <title>T4Tidy – Declutter. Design. Dominate.</title>
   <style>
     body {
       margin: 0;
@@ -11,10 +11,19 @@
       background: #f2f6fc;
       color: #333;
       line-height: 1.6;
+      background-image: url('t4tidy_bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding-bottom: 40px;
     }
 
     header {
-      background: linear-gradient(to right, #2c3e50, #3498db);
+      background: rgba(44, 62, 80, 0.9);
       color: #fff;
       padding: 20px 30px;
       display: flex;
@@ -22,9 +31,17 @@
       align-items: center;
     }
 
+    header img {
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
     }
 
     nav a {
@@ -38,6 +55,9 @@
       padding: 60px 30px;
       max-width: 1000px;
       margin: auto;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      margin-bottom: 30px;
     }
 
     .section h2 {
@@ -51,9 +71,8 @@
     }
 
     .hero {
-      background: linear-gradient(to bottom right, #e3f2fd, #fce4ec);
       text-align: center;
-      padding: 80px 30px;
+      padding: 80px 30px 40px;
     }
 
     .hero h2 {
@@ -80,7 +99,7 @@
     }
 
     footer {
-      background: #2c3e50;
+      background: rgba(44, 62, 80, 0.9);
       color: #ccc;
       text-align: center;
       padding: 20px;
@@ -107,10 +126,6 @@
       color: #2980b9;
     }
 
-    .package-box p {
-      margin: 5px 0;
-    }
-
     .highlight {
       background: #d1ecf1;
       padding: 15px;
@@ -118,81 +133,95 @@
       border-radius: 6px;
       margin-bottom: 20px;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>MySpace</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#packages">Packages</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="overlay">
+    <header>
+      <h1>
+        <img src="t4tidy_bg.png" alt="T4Tidy Logo" />
+        T4Tidy
+      </h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section class="hero">
-    <h2>Declutter. Design. Dominate.</h2>
-    <p>India’s first tech-enabled, full-service organizing company helping you simplify your life, one space at a time. Now more affordable for every home and workspace.</p>
-    <p class="highlight"><strong>Managed by:</strong> Abhyunnati Singh | Based in Bilaspur and Raipur | Expanding to more cities soon.</p>
-    <div class="cta">
-      <button onclick="alert('Booking coming soon!')">Book a Consultation</button>
-    </div>
-  </section>
+    <section class="hero">
+      <h2>Declutter. Design. Dominate.</h2>
+      <p>India’s first tech-enabled, full-service organizing company helping you simplify your life, one space at a time. Now more affordable for every home and workspace.</p>
+      <p class="highlight"><strong>Managed by:</strong> Abhyunnati Singh | Based in Bilaspur and Raipur | Expanding to more cities soon.</p>
+      <div class="cta">
+        <button onclick="alert('Booking coming soon!')">Book a Consultation</button>
+      </div>
+    </section>
 
-  <section class="section" id="services">
-    <h2>What We Do</h2>
-    <ul>
-      <li>Home & wardrobe organization</li>
-      <li>Workspace & home office setup</li>
-      <li>Post-move unpacking & setup</li>
-      <li>Kids' & senior-friendly storage solutions</li>
-      <li>Virtual space planning + app (coming soon)</li>
-      <li>Smart modular storage product kits</li>
-      <li>Organizer training for freelancers & homemakers</li>
-    </ul>
-  </section>
+    <section class="section" id="services">
+      <h2>What We Do</h2>
+      <ul>
+        <li>Home & wardrobe organization</li>
+        <li>Workspace & home office setup</li>
+        <li>Post-move unpacking & setup</li>
+        <li>Kids' & senior-friendly storage solutions</li>
+        <li>Virtual space planning + app (coming soon)</li>
+        <li>Smart modular storage product kits</li>
+        <li>Organizer training for freelancers & homemakers</li>
+      </ul>
+    </section>
 
-  <section class="section" id="packages">
-    <h2>Starter Packages (Affordable Rates)</h2>
+    <section class="section" id="packages">
+      <h2>Starter Packages (Affordable Rates)</h2>
 
-    <div class="package-box">
-      <h3>Mini Makeover – ₹1,999</h3>
-      <p>1-hour Zoom consult + personalized checklist</p>
-    </div>
+      <div class="package-box">
+        <h3>Mini Makeover – ₹1,999</h3>
+        <p>1-hour Zoom consult + personalized checklist</p>
+      </div>
 
-    <div class="package-box">
-      <h3>Smart Home – ₹4,999</h3>
-      <p>2-room organizing + follow-up plan + storage tips</p>
-    </div>
+      <div class="package-box">
+        <h3>Smart Home – ₹4,999</h3>
+        <p>2-room organizing + follow-up plan + storage tips</p>
+      </div>
 
-    <div class="package-box">
-      <h3>Premium Reset – ₹11,999</h3>
-      <p>Whole-house transformation + modular product suggestions</p>
-    </div>
+      <div class="package-box">
+        <h3>Premium Reset – ₹11,999</h3>
+        <p>Whole-house transformation + modular product suggestions</p>
+      </div>
 
-    <div class="package-box">
-      <h3>Move & Reset – ₹6,999</h3>
-      <p>Declutter before move + post-move setup</p>
-    </div>
+      <div class="package-box">
+        <h3>Move & Reset – ₹6,999</h3>
+        <p>Declutter before move + post-move setup</p>
+      </div>
 
-    <div class="package-box">
-      <h3>Office Zen – ₹3,499</h3>
-      <p>Boost productivity with optimized office setups</p>
-    </div>
-  </section>
+      <div class="package-box">
+        <h3>Office Zen – ₹3,499</h3>
+        <p>Boost productivity with optimized office setups</p>
+      </div>
+    </section>
 
-  <section class="section" id="contact">
-    <h2>Get In Touch</h2>
-    <p>📧 Email: hello@myspaceindia.in</p>
-    <p>📍 Currently serving: Bilaspur, Raipur | Launching in more cities soon</p>
-    <p>📲 Instagram: @myspace.india | App coming soon</p>
-  </section>
+    <section class="section" id="contact">
+      <h2>Get In Touch</h2>
+      <p>📧 Email: hello@t4tidy.in</p>
+      <p>📍 Currently serving: Bilaspur, Raipur | Launching in more cities soon</p>
+      <p>📲 Instagram: @t4tidy | App coming soon</p>
+    </section>
 
-  <footer>
-    © 2025 MySpace | Crafted with care by Abhyunnati Singh & team.
-  </footer>
+    <footer>
+      © 2025 T4Tidy | Crafted with care by Abhyunnati Singh & team.
+    </footer>
+  </div>
 
 </body>
 </html>
