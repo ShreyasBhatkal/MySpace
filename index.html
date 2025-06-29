@@ -1,83 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>T4Tidy – Declutter. Design. Dominate.</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f6fc;
-      color: #333;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f9f8f4;
+      color: #2e3a59;
       line-height: 1.6;
-      background-image: url('t4tidy_bg.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.92);
-      padding-bottom: 40px;
     }
 
     header {
-      background: rgba(44, 62, 80, 0.9);
-      color: #fff;
-      padding: 20px 30px;
+      background: #f4e3e3;
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    header img {
-      height: 50px;
-      border-radius: 8px;
-      margin-right: 15px;
+      padding: 20px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
     header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
       margin: 0;
-      font-size: 26px;
-      display: flex;
-      align-items: center;
+      color: #b76e79;
     }
 
     nav a {
-      color: #fff;
+      margin-left: 25px;
       text-decoration: none;
-      margin-left: 20px;
+      color: #2e3a59;
       font-weight: 500;
-    }
-
-    .section {
-      padding: 60px 30px;
-      max-width: 1000px;
-      margin: auto;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
-
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-
-    .section p, li {
-      font-size: 17px;
     }
 
     .hero {
       text-align: center;
-      padding: 80px 30px 40px;
+      padding: 100px 30px 60px;
+      background: linear-gradient(to bottom right, #fff9f4, #f3e4c9);
     }
 
     .hero h2 {
-      font-size: 40px;
-      color: #2c3e50;
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #2e3a59;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
     }
 
     .cta {
@@ -85,143 +60,104 @@
     }
 
     .cta button {
-      background: #1a73e8;
+      background: #b76e79;
       color: #fff;
-      border: none;
       padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
       font-size: 16px;
-      border-radius: 10px;
       cursor: pointer;
     }
 
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 30px;
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #2e3a59;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 17px;
+      color: #444;
+    }
+
     ul {
-      padding-left: 20px;
+      list-style-type: square;
+      margin-left: 20px;
     }
 
     footer {
-      background: rgba(44, 62, 80, 0.9);
-      color: #ccc;
+      background: #f4e3e3;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-    }
-
-    .package-box {
-      background: #ffffff;
-      border: 2px solid #e1e1e1;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 15px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
-      transition: transform 0.3s ease;
-    }
-
-    .package-box:hover {
-      transform: scale(1.02);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-    }
-
-    .package-box h3 {
-      margin: 0;
-      color: #2980b9;
-    }
-
-    .highlight {
-      background: #d1ecf1;
-      padding: 15px;
-      border-left: 5px solid #17a2b8;
-      border-radius: 6px;
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 20px;
-      }
-      .hero h2 {
-        font-size: 30px;
-      }
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <div class="overlay">
-    <header>
-      <h1>
-        <img src="t4tidy_bg.png" alt="T4Tidy Logo" />
-        T4Tidy
-      </h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#packages">Packages</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header>
+    <h1>T4Tidy</h1>
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#method">CALM Method</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <h2>Declutter. Design. Dominate.</h2>
-      <p>India’s first tech-enabled, full-service organizing company helping you simplify your life, one space at a time. Now more affordable for every home and workspace.</p>
-      <p class="highlight"><strong>Managed by:</strong> Abhyunnati Singh | Based in Bilaspur and Raipur | Expanding to more cities soon.</p>
-      <div class="cta">
-        <button onclick="alert('Booking coming soon!')">Book a Consultation</button>
-      </div>
-    </section>
+  <section class="hero">
+    <h2>Declutter. Design. Dominate.</h2>
+    <p>India’s first tech-enabled, full-service organizing company that helps you simplify your life, one space at a time. We believe progress begins with your space — and it starts with you.</p>
+    <div class="cta">
+      <button>Book Your Clarity Session</button>
+    </div>
+  </section>
 
-    <section class="section" id="services">
-      <h2>What We Do</h2>
-      <ul>
-        <li>Home & wardrobe organization</li>
-        <li>Workspace & home office setup</li>
-        <li>Post-move unpacking & setup</li>
-        <li>Kids' & senior-friendly storage solutions</li>
-        <li>Virtual space planning + app (coming soon)</li>
-        <li>Smart modular storage product kits</li>
-        <li>Organizer training for freelancers & homemakers</li>
-      </ul>
-    </section>
+  <section class="section" id="mission">
+    <h3>Our Mission</h3>
+    <p>To empower individuals and families by transforming their spaces into serene environments that reflect their values, foster personal growth, and promote well-being. We blend elegant design with mindful organizing to offer transformational clarity and confidence.</p>
+  </section>
 
-    <section class="section" id="packages">
-      <h2>Starter Packages (Affordable Rates)</h2>
+  <section class="section" id="method">
+    <h3>The CALM Method™</h3>
+    <p><strong>Collect:</strong> Gather all your belongings by category to gain visual and emotional clarity.<br>
+       <strong>Assess:</strong> Sort items with intention — what reflects your present or future self?<br>
+       <strong>Locate:</strong> Define logical homes for everything based on your routines and priorities.<br>
+       <strong>Maintain:</strong> Establish gentle rituals to keep your space aligned and functional.</p>
+  </section>
 
-      <div class="package-box">
-        <h3>Mini Makeover – ₹1,999</h3>
-        <p>1-hour Zoom consult + personalized checklist</p>
-      </div>
+  <section class="section" id="services">
+    <h3>Our Offerings</h3>
+    <ul>
+      <li>Home & wardrobe organization</li>
+      <li>Workspace & home office transformation</li>
+      <li>Post-move planning and setup</li>
+      <li>Kids' & senior-friendly storage systems</li>
+      <li>Virtual clarity sessions & digital planning tools</li>
+      <li>Smart modular storage & curated products</li>
+      <li>Training for homemakers and freelance organizers</li>
+    </ul>
+  </section>
 
-      <div class="package-box">
-        <h3>Smart Home – ₹4,999</h3>
-        <p>2-room organizing + follow-up plan + storage tips</p>
-      </div>
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>📧 Email: hello@t4tidy.in</p>
+    <p>📍 Locations: Currently serving Bilaspur & Raipur. Expanding soon.</p>
+    <p>📲 Instagram: @t4tidy | Bookings & app coming soon</p>
+  </section>
 
-      <div class="package-box">
-        <h3>Premium Reset – ₹11,999</h3>
-        <p>Whole-house transformation + modular product suggestions</p>
-      </div>
-
-      <div class="package-box">
-        <h3>Move & Reset – ₹6,999</h3>
-        <p>Declutter before move + post-move setup</p>
-      </div>
-
-      <div class="package-box">
-        <h3>Office Zen – ₹3,499</h3>
-        <p>Boost productivity with optimized office setups</p>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Get In Touch</h2>
-      <p>📧 Email: hello@t4tidy.in</p>
-      <p>📍 Currently serving: Bilaspur, Raipur | Launching in more cities soon</p>
-      <p>📲 Instagram: @t4tidy | App coming soon</p>
-    </section>
-
-    <footer>
-      © 2025 T4Tidy | Crafted with care by Abhyunnati Singh & team.
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 T4Tidy. All rights reserved.<br>
+    Managed by Abhyunnati Singh | Built on purpose and empathy.</p>
+  </footer>
 
 </body>
 </html>
