@@ -8,9 +8,15 @@
     body {
       margin: 0;
       font-family: 'Helvetica Neue', sans-serif;
-      background: #f9f8f4;
+      background: url('t4tidy_bg.png') no-repeat center center fixed;
+      background-size: cover;
       color: #2e3a59;
       line-height: 1.6;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.92);
+      min-height: 100vh;
     }
 
     header {
@@ -47,7 +53,6 @@
     .hero {
       text-align: center;
       padding: 100px 30px 60px;
-      background: linear-gradient(to bottom right, #fff9f4, #f3e4c9);
     }
 
     .hero h2 {
@@ -110,62 +115,62 @@
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <h1><img src="t4tidy_bg.png" alt="T4Tidy Logo">T4Tidy</h1>
+      <nav>
+        <a href="#mission">Mission</a>
+        <a href="#method">CALM Method</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <header>
-    <h1><img src="t4tidy_bg.png" alt="T4Tidy Logo">T4Tidy</h1>
-    <nav>
-      <a href="#mission">Mission</a>
-      <a href="#method">CALM Method</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <section class="hero">
+      <h2>Declutter. Design. Dominate.</h2>
+      <p>India’s first tech-enabled, full-service organizing company that helps you simplify your life, one space at a time. We believe progress begins with your space — and it starts with you.</p>
+      <div class="cta">
+        <button>Book Your Clarity Session</button>
+      </div>
+    </section>
 
-  <section class="hero">
-    <h2>Declutter. Design. Dominate.</h2>
-    <p>India’s first tech-enabled, full-service organizing company that helps you simplify your life, one space at a time. We believe progress begins with your space — and it starts with you.</p>
-    <div class="cta">
-      <button>Book Your Clarity Session</button>
-    </div>
-  </section>
+    <section class="section" id="mission">
+      <h3>Our Mission</h3>
+      <p>To empower individuals and families by transforming their spaces into serene environments that reflect their values, foster personal growth, and promote well-being. We blend elegant design with mindful organizing to offer transformational clarity and confidence.</p>
+    </section>
 
-  <section class="section" id="mission">
-    <h3>Our Mission</h3>
-    <p>To empower individuals and families by transforming their spaces into serene environments that reflect their values, foster personal growth, and promote well-being. We blend elegant design with mindful organizing to offer transformational clarity and confidence.</p>
-  </section>
+    <section class="section" id="method">
+      <h3>The CALM Method™</h3>
+      <p><strong>Collect:</strong> Gather all your belongings by category to gain visual and emotional clarity.<br>
+         <strong>Assess:</strong> Sort items with intention — what reflects your present or future self?<br>
+         <strong>Locate:</strong> Define logical homes for everything based on your routines and priorities.<br>
+         <strong>Maintain:</strong> Establish gentle rituals to keep your space aligned and functional.</p>
+    </section>
 
-  <section class="section" id="method">
-    <h3>The CALM Method™</h3>
-    <p><strong>Collect:</strong> Gather all your belongings by category to gain visual and emotional clarity.<br>
-       <strong>Assess:</strong> Sort items with intention — what reflects your present or future self?<br>
-       <strong>Locate:</strong> Define logical homes for everything based on your routines and priorities.<br>
-       <strong>Maintain:</strong> Establish gentle rituals to keep your space aligned and functional.</p>
-  </section>
+    <section class="section" id="services">
+      <h3>Our Offerings</h3>
+      <ul>
+        <li>Home & wardrobe organization</li>
+        <li>Workspace & home office transformation</li>
+        <li>Post-move planning and setup</li>
+        <li>Kids' & senior-friendly storage systems</li>
+        <li>Virtual clarity sessions & digital planning tools</li>
+        <li>Smart modular storage & curated products</li>
+        <li>Training for homemakers and freelance organizers</li>
+      </ul>
+    </section>
 
-  <section class="section" id="services">
-    <h3>Our Offerings</h3>
-    <ul>
-      <li>Home & wardrobe organization</li>
-      <li>Workspace & home office transformation</li>
-      <li>Post-move planning and setup</li>
-      <li>Kids' & senior-friendly storage systems</li>
-      <li>Virtual clarity sessions & digital planning tools</li>
-      <li>Smart modular storage & curated products</li>
-      <li>Training for homemakers and freelance organizers</li>
-    </ul>
-  </section>
+    <section class="section" id="contact">
+      <h3>Contact Us</h3>
+      <p>📧 Email: hello@t4tidy.in</p>
+      <p>📍 Locations: Currently serving Bilaspur & Raipur. Expanding soon.</p>
+      <p>📲 Instagram: @t4tidy | Bookings & app coming soon</p>
+    </section>
 
-  <section class="section" id="contact">
-    <h3>Contact Us</h3>
-    <p>📧 Email: hello@t4tidy.in</p>
-    <p>📍 Locations: Currently serving Bilaspur & Raipur. Expanding soon.</p>
-    <p>📲 Instagram: @t4tidy | Bookings & app coming soon</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 T4Tidy. All rights reserved.<br>
-    Managed by Abhyunnati Singh | Built on purpose and empathy.</p>
-  </footer>
-
+    <footer>
+      <p>&copy; 2025 T4Tidy. All rights reserved.<br>
+      Managed by Abhyunnati Singh | Built on purpose and empathy.</p>
+    </footer>
+  </div>
 </body>
 </html>
